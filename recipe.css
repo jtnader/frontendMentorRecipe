@@ -1,0 +1,146 @@
+body {
+    background-color: #e8d8c3;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe {
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem;
+    font-weight: 100;
+
+}
+
+.recipe img {
+    background-color: white;
+    border-radius: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 1.5rem 1.5rem;
+}
+
+#image {
+    padding-bottom: 0;
+}
+
+h1 {
+
+    font-size: 2rem;
+
+}
+
+.content {
+    margin: auto;
+    padding: 0 1.5rem;
+    width: 90% font-family:
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+#preparationTime {
+    color: purple;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+div.preparationList,
+div.preparation h3,
+div.preparation ul,
+div.preparation li {
+    background-color: rgba(255, 233, 236, .5);
+}
+
+.preparation li {
+    padding-bottom: 1em;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    color: #814141;
+
+}
+
+.ingredientsList li,
+.instructionsList li {
+    margin-bottom: .5em;
+}
+
+.ingredientsList,
+.instructionsList {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: .5em;
+}
+
+/* To get numbers in OL to be color without changing rest */
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+}
+
+ol li:before {
+    color: #814141;
+    font-weight: bold;
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+}
+
+.nutritionTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+td {
+    padding-right: 8em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid lightgray;
+}
+
+.fat td {
+    border-bottom: none;
+}
+
+.numColor {
+    color: #814141;
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 3em;
+    font-size: .75em;
+    text-align: center;
+}
+
+@media (max-width: 773px) {
+    img {
+        transform: scale(.9);
+    }
+}
+
+@media (max-width: 556px) {
+    /* .recipe {
+        transform: scale(.7);
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    } */
+
+    body {
+        background-color: white;
+    }
+}
